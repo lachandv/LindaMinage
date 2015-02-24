@@ -1,4 +1,4 @@
-package main.java;
+//package main.java;
 
 import java.util.ArrayList;
 
@@ -17,6 +17,10 @@ public class TupleLinda {
 		
 		
 	}
+
+    public boolean match(Template ts){
+        return true;
+    }
 	
 	
 }
