@@ -19,4 +19,12 @@ public class Template {
             }
         }
     }
+
+    public int size(){
+        return champs.size();
+    }
+
+    public Champ get(int i){
+        return this.champs.get(i);
+    }
 }

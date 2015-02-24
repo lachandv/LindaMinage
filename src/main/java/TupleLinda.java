@@ -5,7 +5,7 @@ import java.util.ArrayList;
 
 public class TupleLinda {
 
-	ArrayList<Champ> monTuple = new ArrayList<Champ>();
+	private ArrayList<Champ> monTuple = new ArrayList<Champ>();
 
 	public TupleLinda(String tupleLin) {
 		String champs[] = tupleLin.split(",");
@@ -18,7 +18,23 @@ public class TupleLinda {
 		
 	}
 
-    public boolean match(Template ts){
+    public int size(){
+        return this.monTuple.size();
+    }
+
+    public boolean match(Template t){
+        if (this.size() != t.size()){
+            return false;
+        }
+        for(int i = 0; i<this.size(); i++){
+            Champ champTuple = this.monTuple.get(i);
+            Champ champTemplate = t.get(i);
+
+            if (!champTuple.getType().equals(champTemplate.getType()) ||
+                    (!champTuple.getValeur().equals(champTemplate.getValeur()) && champTemplate.getValeur() != null)) {
+                return false;
+            };
+        }
         return true;
     }
 	
