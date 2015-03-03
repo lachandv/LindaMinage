@@ -16,6 +16,12 @@ public class EspaceTuple {
         ts.espace.add(tpl);
     }
 
+    public void add(TupleLinda[] tuples, EspaceTuple ts){
+        for (TupleLinda tuple : tuples){
+            ts.espace.add(tuple);
+        }
+    }
+
     public TupleLinda in(EspaceTuple ts, Template tp) {
         boolean founded = false;
         while (!founded) {
