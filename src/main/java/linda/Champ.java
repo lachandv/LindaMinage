@@ -1,4 +1,4 @@
-package main.java;
+package linda;
 
 public class Champ {
 	private String valeur;

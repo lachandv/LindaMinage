@@ -1,10 +1,7 @@
-package main.java;
-
-/**
+package linda; /**
  * Created by valentin on 24/02/15.
  */
 import java.util.ArrayList;
-import java.io.*;
 
 public class EspaceTuple {
 

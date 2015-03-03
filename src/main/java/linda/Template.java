@@ -1,9 +1,8 @@
-package main.java;
-
-/**
+package linda; /**
  * Created by valentin on 24/02/15.
  */
 import java.util.ArrayList;
+
 public class Template {
 
     private ArrayList<Champ> champs;
