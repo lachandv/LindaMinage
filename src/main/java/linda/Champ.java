@@ -14,14 +14,8 @@ public class Champ {
 	public String getValeur() {
 		return valeur;
 	}
-	public void setValeur(String valeur) {
-		this.valeur = valeur;
-	}
 	public String getType() {
 		return type;
-	}
-	public void setType(String type) {
-		this.type = type;
 	}
 
 }

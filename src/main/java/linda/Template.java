@@ -16,7 +16,7 @@ public class Template {
                 champs.add(new Champ(null, contenu[0]));
             }
             else{
-                champs.add(new Champ(contenu[0], contenu[1]));
+                champs.add(new Champ(contenu[1], contenu[0]));
             }
         }
     }
@@ -27,5 +27,14 @@ public class Template {
 
     public Champ get(int i){
         return this.champs.get(i);
+    }
+
+    public TupleLinda toTuple() {
+        String tmp = "";
+        for(int i = 0; i<this.champs.size(); i++) {
+            Champ champTemplate = this.champs.get(i);
+            tmp = tmp + champTemplate.getValeur() + " " + champTemplate.getType() + ",";
+        }
+        return new TupleLinda(tmp);
     }
 }
