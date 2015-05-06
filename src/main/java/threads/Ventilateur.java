@@ -26,6 +26,8 @@ public class Ventilateur extends Thread {
             }
             if (this.etat == true) {
                 mine.ventile();
+                mine.ventile();
+                mine.ventile();
             }
             try {
                 Thread.sleep(100);

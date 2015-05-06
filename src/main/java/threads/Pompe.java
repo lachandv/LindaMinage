@@ -17,7 +17,6 @@ public class Pompe extends Thread {
 
     public void run() {
         while (1 == 1) {
-            //System.out.println(ts.inp(ts, new Template("activer_pompe string")));
             if (ts.inp(ts, new Template("activer_pompe")) != null) {
                 this.etat = true;
             }
@@ -25,6 +24,8 @@ public class Pompe extends Thread {
                 this.etat = false;
             }
             if (this.etat == true) {
+                mine.pompe();
+                mine.pompe();
                 mine.pompe();
             }
             try {

@@ -18,12 +18,12 @@ public class MineTMP extends JFrame{
     private JLabel labelCH4;
     private JButton buttonLancer;
 
-    private float seuil_CO = 100;
-    private float seuil_CH4 = 100;
-    private float seuil_H2O = 100;
-    private float val_CO = 80;
-    private float val_CH4 = 80;
-    private float val_H2O = 80;
+    private float seuil_CO = 200;
+    private float seuil_CH4 = 200;
+    private float seuil_H2O = 200;
+    private float val_CO = 190;
+    private float val_CH4 = 180;
+    private float val_H2O = 175;
 
     private CapteurCH4 captCH4;
     private CapteurCO captCO;
@@ -93,10 +93,11 @@ public class MineTMP extends JFrame{
         c.gridy = 2;
         this.add(progressBarCH4, c);
 
-        c.fill = GridBagConstraints.HORIZONTAL;
+        /*c.fill = GridBagConstraints.HORIZONTAL;
         c.gridx = 0;
         c.gridy = 3;
         this.add(buttonLancer, c);
+        */
 
         this.setVisible(true);
     }
