@@ -7,10 +7,10 @@ import Mine.*;
 public class Pompe extends Thread {
 
     private EspaceTuple ts;
-    private Mine mine;
+    private MineTMP mine;
     private boolean etat = false;
 
-    public Pompe(EspaceTuple ts, Mine m) {
+    public Pompe(EspaceTuple ts, MineTMP m) {
         this.ts = ts;
         this.mine = m;
     }

@@ -7,10 +7,10 @@ import Mine.*;
 public class H2OHaut extends Thread {
 
     private EspaceTuple ts;
-    private Mine mine;
+    private MineTMP mine;
     private float seuil;
 
-    public H2OHaut(EspaceTuple ts, Mine m, float seuil) {
+    public H2OHaut(EspaceTuple ts, MineTMP m, float seuil) {
         this.ts = ts;
         this.mine = m;
         this.seuil = seuil;

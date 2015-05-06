@@ -7,9 +7,9 @@ import Mine.*;
 public class CapteurH2O extends Thread {
 
 private EspaceTuple ts;
-private Mine mine;
+private MineTMP mine;
 
-public CapteurH2O(EspaceTuple ts, Mine m) {
+public CapteurH2O(EspaceTuple ts, MineTMP m) {
 this.ts = ts;
 this.mine = m;
 }
